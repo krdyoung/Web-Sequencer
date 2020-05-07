@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="Tone.js"></script>
+    <script src="TimeCell.js"></script>
+    <script src="Main.js"></script>
+    <script src="Cell.js"></script>
+    <script src="Row.js"></script>
+    <script src="Board.js"></script>
+    <script src="InstrumentSelection.js"></script>
+    <script src="CellController.js"></script>
+    <script src="DrumController.js"></script>
+    <script src="SynthController.js"></script>
+    <script src="TimeController.js"></script>
+    <script src="MusicController.js"></script>
+  </head>
+  <body bgcolor="1b1b1b">
+    <img src="images/logo.png" style="transform: scale(0.4);" id="logo" />
+    <img
+      src="images/plus.png"
+      style="transform: scale(0.4);"
+      onclick="board.createRow();"
+    />
+    <img
+      src="images/minus.png"
+      style="transform: scale(0.4);"
+      onclick="board.removeRow();"
+    />
+    <img
+      id="playButton"
+      src="images/play.png"
+      style="transform: scale(0.4);"
+      onclick="timeController.togglePlayback();"
+    />
+    <input
+      id="tempo"
+      class="slider"
+      type="range"
+      min="60"
+      max="180"
+      value="120"
+      oninput="timeController.bpmControl();"
+    />
+    <label id="tempoText" for="tempoCounter">BPM : </label>
+    <span id="tempoCounter">120</span>
+    <div id="timeLine"></div>
+    <div id="controlBar"></div>
+  </body>
+</html>
