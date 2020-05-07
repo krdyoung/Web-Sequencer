@@ -17,7 +17,7 @@ class CellController {
     this.clapImg.onclick = this.setClap.bind(this);
     this.hatImg.onclick = this.setHat.bind(this);
     this.statusImg.src = "/Web-Sequencer/images/off.png";
-    this.upImg.src = "/Web-Sequencer/Web-Sequencer/images/up.png";
+    this.upImg.src = "/Web-Sequencer/images/up.png";
     this.downImg.src = "/Web-Sequencer/images/down.png";
     this.kickImg.src = "/Web-Sequencer/images/kick.png";
     this.snareImg.src = "/Web-Sequencer/images/snare.png";
