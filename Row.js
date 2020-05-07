@@ -29,16 +29,16 @@ class Row {
   getSrc(type) {
     switch (type) {
       case 1:
-        return "/images/drum.png";
+        return "/Web-Sequencer/images/drum.png";
         break;
       case 2:
-        return "/images/lead.png";
+        return "/Web-Sequencer/images/lead.png";
         break;
       case 3:
-        return "/images/keys.png";
+        return "/Web-Sequencer/images/keys.png";
         break;
       case 4:
-        return "/images/bass.png";
+        return "/Web-Sequencer/images/bass.png";
         break;
     }
   }
