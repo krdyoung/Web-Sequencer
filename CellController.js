@@ -16,13 +16,13 @@ class CellController {
     this.snareImg.onclick = this.setSnare.bind(this);
     this.clapImg.onclick = this.setClap.bind(this);
     this.hatImg.onclick = this.setHat.bind(this);
-    this.statusImg.src = "/images/off.png";
-    this.upImg.src = "/images/up.png";
-    this.downImg.src = "/images/down.png";
-    this.kickImg.src = "/images/kick.png";
-    this.snareImg.src = "/images/snare.png";
-    this.clapImg.src = "/images/clap.png";
-    this.hatImg.src = "/images/hat.png";
+    this.statusImg.src = "/Web-Sequencer/images/off.png";
+    this.upImg.src = "/Web-Sequencer/Web-Sequencer/images/up.png";
+    this.downImg.src = "/Web-Sequencer/images/down.png";
+    this.kickImg.src = "/Web-Sequencer/images/kick.png";
+    this.snareImg.src = "/Web-Sequencer/images/snare.png";
+    this.clapImg.src = "/Web-Sequencer/images/clap.png";
+    this.hatImg.src = "/Web-Sequencer/images/hat.png";
     this.statusImg.classList = "controlImg";
     this.upImg.classList = "controlImg";
     this.downImg.classList = "controlImg";
@@ -36,9 +36,9 @@ class CellController {
     this.type = t;
     this.pitch = p;
     if (s == 0) {
-      this.statusImg.src = "/images/off.png";
+      this.statusImg.src = "/Web-Sequencer/images/off.png";
     } else {
-      this.statusImg.src = "/images/on.png";
+      this.statusImg.src = "/Web-Sequencer/images/on.png";
     }
     if (this.type == 1) {
       this.drumControls();
