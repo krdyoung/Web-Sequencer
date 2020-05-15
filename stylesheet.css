@@ -86,6 +86,7 @@
   width: 800px;
   border-radius: 12px;
   position: fixed;
+  z-index: 999;
   float: left;
   top: 80%;
   left: 50%;
